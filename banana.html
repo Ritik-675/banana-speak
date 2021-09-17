@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        textarea{
+            max-width: 75%;
+            margin: 2% 20%;
+            border: 2px solid black;
+            border-radius: 2rem;
+            padding: 2rem;
+            background-color: rgb(74, 221, 221);
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .but{
+            margin: 2vh 40%;
+            width: 15%;
+            padding: 1.5rem;
+            border-radius: 2rem;
+            border: 2px solid black;
+            background-color: yellow;
+        }
+        .head{
+            background-image: url(./img/banana.jpg);
+            height: 20vh;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        .foot{
+            background-image: url(./img/banana.jpg);
+            height: 20vh;
+        }
+        .text{
+            position: relative;
+            top: 8vh;
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header class="head"><span class="text">Talk Banana Language</span></header>
+    <textarea name="text-inp" id="text-inp" cols="30" rows="10" placeholder="Enter your text here"></textarea>
+    <button class="but">Submit</button>
+    <textarea name="text-out" id="text-out" cols="30" rows="10" placeholder="Banana text will come here"></textarea>
+
+    <footer class="foot">Thanks for playing</footer>
+    <script src="./banana.js"></script>
+</body>
+</html>
